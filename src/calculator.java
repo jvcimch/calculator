@@ -102,6 +102,9 @@ public class calculator {
                     break;
                 case "/":
                     res = a / b;
+                    if(res == 0){
+                       throw new RuntimeException("В римской системе нет нуля");
+                    }
                     result = Integer.toString(res);
                     break;
                 default:
